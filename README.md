@@ -82,6 +82,27 @@ npm run serve
    npm start
    ```
 
+### Docker
+1. build
+   ```shell
+   docker build -t sub-store .
+   ```
+   
+2. run
+   ```shell
+   docker run -p 3000:80 --name=sub-store instartlove/sub-store
+   ```
+3. docker compose
+   ```yaml
+   version: '3'
+   services:
+     sub-store:
+       image: instartlove/sub-store
+       container_name: sub-store
+       ports:
+         - "3000:80"
+   ```
+
 ## LICENSE
 
 This project is under the GPL V3 LICENSE.
