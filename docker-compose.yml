@@ -1,0 +1,7 @@
+version: '3'
+services:
+  sub-store:
+    image: sub-store
+    container_name: sub-store
+    ports:
+      - "3000:80"
