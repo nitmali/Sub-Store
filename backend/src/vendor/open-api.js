@@ -87,7 +87,7 @@ export class OpenAPI {
                 (err) => console.log(err),
             );
             this.node.fs.writeFileSync(
-                'root.json',
+                'data/root.json',
                 JSON.stringify(this.root, null, 2),
                 { flag: 'w' },
                 (err) => console.log(err),
