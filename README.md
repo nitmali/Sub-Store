@@ -90,7 +90,7 @@ npm run serve
    
 2. run
    ```shell
-   docker run -p 3000:80 --name=sub-store instartlove/sub-store
+   docker run -d -p 3000:80 -v ./data:/app/data --name=sub-store instartlove/sub-store
    ```
 3. docker compose
    ```yaml
@@ -101,6 +101,8 @@ npm run serve
        container_name: sub-store
        ports:
          - "3000:80"
+       volumes:
+         - ./data:/app/data
    ```
 
 ## LICENSE

@@ -49,7 +49,7 @@ export class OpenAPI {
 
         if (isNode) {
             // create a json for root cache
-            let fpath = 'root.json';
+            let fpath = 'data/root.json';
             if (!this.node.fs.existsSync(fpath)) {
                 this.node.fs.writeFileSync(fpath, JSON.stringify({}), {
                     flag: 'wx',

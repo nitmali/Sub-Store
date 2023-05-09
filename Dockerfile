@@ -13,6 +13,7 @@ RUN pnpm install && pnpm build
 # service
 FROM node:lts-alpine
 WORKDIR /app
+VOLUME /data
 
 RUN apk update && apk add nginx
 
